@@ -1,36 +1,10 @@
 # Supervised Machine Learning Credit Risk Analysis
 
-* Created 5JUN2022, includes scripts for both various data resampling methods and ensemble models.
+The purpose of this analysis is to select an algorithm that can best predict HIGH or LOW credit risk by training using historical credit information. This is done by using a number of resampling models and algorithms to find a configuration with the best fit based on their accuracy and precision scores.
 
 ## Background
 
-The question was asked, "What information about different loans and borrowers can potentially predict if they are at 'high risk' or 'low risk' of defaulting on their agreements?" This analysis used loan data from Q1 of 2019, containing 88 columns of factors associated with each borrower. Some ranging from interest rates, some dates of next payment, some loan types, etc. This data was converted to integers when approporate, or dropped if determined to be irrelevant to the question.
-
 Multiple methods were used, some resampling the data to provide an even analysis for low and high risk borrowers with Logistic Regression (there were far fewer "high risk" borrowers identified in the dataset than "low risk"). Other methods utilized 'ensemble' imbalanced learning modules. All of these were compared to determine what the best method may be for predicting credit risk in the data.
-
-## Methods
-
-Resampling methods used with Logistic Regression:
-
-- Oversampling:
-    * Random Oversampling
-    * SMOTE Oversampling
-
-- Undersampling:
-    * Cluster Centroids
-
-- Combined Methods:
-    * SMOTEENN (Oversampling with removal of overlapping datapoints)
-
-Ensemble Methods:
-
-* Balanced Random Forest Classifier
-* Easy Ensemble Classifier
-
-## Results
-
-
-
 
 
 ## Conclusions and Recommendations
